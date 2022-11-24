@@ -21,7 +21,7 @@ export class AppComponent  implements OnInit, AfterViewChecked {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Главная');
+    this.titleService.setTitle('Панель управления');
     if (localStorage.getItem("user") && localStorage.getItem("user") !== "") {
       this.user = JSON.parse(localStorage.getItem("user")!);
       this.sendObject = {
@@ -31,8 +31,14 @@ export class AppComponent  implements OnInit, AfterViewChecked {
         if(result.status === 'success'){
           this.user = result.data;
           localStorage.setItem("user", JSON.stringify(this.user));
+          this.router.navigate(['/']);
+        }else{
+          localStorage.setItem("user", "");
+          this.router.navigate(['/login']);
         }
       });
+    }else{
+      this.router.navigate(['/login']);
     }
   }
 
