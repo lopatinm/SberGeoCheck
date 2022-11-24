@@ -1,0 +1,31 @@
+<div style="height: 100vh; width: 100vw" class="container">
+    <mat-card class="card">
+      <mat-card-title>Регистрация</mat-card-title>
+      <mat-card-subtitle *ngIf="!error">{{message}}</mat-card-subtitle>
+      <mat-card-subtitle *ngIf="error" class="error">{{message}}</mat-card-subtitle>
+      <mat-card-content>
+        <form class="form" [formGroup]="loginForm">
+  
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="phone">Введите номер телефона</mat-label>
+            <input id="phone" type="tel" matInput mask="(000) 000-00-00" prefix="+7 " [showMaskTyped]="false" formControlName="phone">
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+  
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="fullname">Введите имя</mat-label>
+            <input matInput id="fullname" type="text"  formControlName="fullname">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+  
+        </form>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-button routerLink="/">Назад</button>
+        <button mat-button (click)="register()">Зарегистрироватся</button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate" *ngIf="loader"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+  </div>

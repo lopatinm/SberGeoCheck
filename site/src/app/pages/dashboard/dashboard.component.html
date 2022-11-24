@@ -1,0 +1,16 @@
+<div class="container">
+    <ya-map 
+    [center]="[62.026734, 129.737444]" 
+    [zoom]="12"
+    [state]="{
+      controls: [
+        'zoomControl',
+        'fullscreenControl'
+      ]
+    }">
+      <ya-geoobject
+      [feature]="geoObject.feature"
+      [options]="geoObject.options"
+    ></ya-geoobject>
+    </ya-map>
+  </div>
