@@ -1,0 +1,33 @@
+
+<div>{{message}}</div>
+<form class="form" [formGroup]="addForm">
+  
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label for="comment">comment</mat-label>
+    <input matInput id="comment" type="text"  formControlName="comment">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label for="latitude">latitude</mat-label>
+    <input matInput id="latitude" type="text"  formControlName="latitude">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="fill">
+    <mat-label for="longitude">longitude</mat-label>
+    <input matInput id="longitude" type="text"  formControlName="longitude">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <button mat-button (click)="addcomment()">Добавить</button>
+</form>
+<div class="container">
+    <ya-map 
+    [center]="[62.026734, 129.737444]" 
+    [zoom]="12"
+    [state]="{
+      controls: [
+        'zoomControl',
+        'fullscreenControl'
+      ]
+    }"
+    (yaclick)="onMapClick($event)"></ya-map>
+</div>

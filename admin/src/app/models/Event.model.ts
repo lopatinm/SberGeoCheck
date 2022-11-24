@@ -1,0 +1,27 @@
+export class EventModel {
+  id: number | undefined;
+  organizationId: number | undefined;
+  localityId: number | undefined;
+  categoryId: number | undefined;
+  title: string | undefined;
+  alias: string | undefined;
+  introtext: string | undefined;
+  description: string | undefined;
+  image: string | undefined;
+  gallery: string | undefined;
+  video: string | undefined;
+  address: string | undefined;
+  phone: string | undefined;
+  email: string | undefined;
+  contact: string | undefined;
+  createdon: number | undefined;
+  published: number | undefined;
+  date: number | undefined;
+  time: string | undefined;
+  tags: string | undefined;
+  rating: number | undefined;
+  views: number | undefined;
+  latitude: string | undefined;
+  longitude: string | undefined;
+  form: string | undefined;
+}

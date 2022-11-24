@@ -87,7 +87,8 @@ $config = [
                     'pluralize' => false,
                     'controller' => [
                         'v1/user',
-                        'v1/district'
+                        'v1/request',
+                        'v1/placemark'
                     ],
                     'extraPatterns' => [
                         'POST login' => 'login',
@@ -97,7 +98,7 @@ $config = [
                         'POST registration' => 'registration',
                         'OPTIONS registration' => 'options',
                         'POST setrole' => 'setrole',
-                        'OPTIONS setrole' => 'options'
+                        'OPTIONS setrole' => 'options',
                     ]
                 ],
             ],
