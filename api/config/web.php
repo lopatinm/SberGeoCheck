@@ -101,6 +101,8 @@ $config = [
                         'OPTIONS setrole' => 'options',
                         'POST accept' => 'accept',
                         'OPTIONS accept' => 'options',
+                        'POST remove' => 'remove',
+                        'OPTIONS remove' => 'options',
                     ]
                 ],
             ],

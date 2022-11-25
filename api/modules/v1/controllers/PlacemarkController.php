@@ -24,7 +24,7 @@ class PlacemarkController extends ActiveController
             ],
         ]);
         $behaviors['authenticator']['class'] = HttpBearerAuth::className();
-        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'accept'];
+        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'accept', 'remove'];
 
         return $behaviors;
     }
@@ -32,7 +32,7 @@ class PlacemarkController extends ActiveController
     public function actions()
     {
         $actions = parent::actions();
-        unset($actions['index'], $actions['accept']);
+        unset($actions['index'], $actions['accept'], $actions['remove']);
         return $actions;
     }
 
@@ -60,5 +60,17 @@ class PlacemarkController extends ActiveController
         if (!isset(Yii::$app->authManager->getRolesByUser(Yii::$app->user->identity['id'])['manager']))
             throw new ForbiddenHttpException(sprintf('Access is denied'));
         return Placemark::markAccept(Yii::$app->getRequest()->getBodyParams());
+    }
+
+    /**
+     * @return array
+     * @throws ForbiddenHttpException
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function actionRemove()
+    {
+        if (!isset(Yii::$app->authManager->getRolesByUser(Yii::$app->user->identity['id'])['manager']))
+            throw new ForbiddenHttpException(sprintf('Access is denied'));
+        return Placemark::markRemove(Yii::$app->getRequest()->getBodyParams());
     }
 }

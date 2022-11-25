@@ -64,7 +64,14 @@ export class NavigatorComponent implements OnInit{
     if(this.placemarks){
       const mark = this.placemarks[i];
       
-      if(mark.status){
+      if(!mark.status){
+        
+        this.navigatorService.markRemove({'id': id}).subscribe(result => {
+          if(this.placemarks){
+            this.placemarks[i].status = true;
+            this.placemarks[i].id = result.data.id;
+          }
+        });
 
       }else{
         this.navigatorService.deleteRequest(id).subscribe(result => {

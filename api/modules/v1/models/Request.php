@@ -15,6 +15,7 @@ use yii\web\HttpException;
  * @property string $longitude
  * @property string $latitude
  * @property string $comment
+ * @property string $inn
  *
  */
 class Request extends ActiveRecord {
@@ -34,7 +35,7 @@ class Request extends ActiveRecord {
     {
         return [
             [['user_id', 'longitude', 'latitude'], 'required'],
-            [['longitude','latitude'], 'string', 'max' => 255],
+            [['longitude','latitude', 'inn'], 'string', 'max' => 255],
             [['comment'], 'string'],
             [['user_id'], 'integer'],
         ];
@@ -51,6 +52,7 @@ class Request extends ActiveRecord {
             'longitude' => 'Longitude',
             'latitude' => 'Latitude',
             'comment' => 'Comment',
+            'inn' => 'Inn',
         ];
     }
 }
