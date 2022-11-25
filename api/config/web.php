@@ -99,6 +99,8 @@ $config = [
                         'OPTIONS registration' => 'options',
                         'POST setrole' => 'setrole',
                         'OPTIONS setrole' => 'options',
+                        'POST accept' => 'accept',
+                        'OPTIONS accept' => 'options',
                     ]
                 ],
             ],

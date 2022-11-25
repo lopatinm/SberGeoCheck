@@ -1,1 +1,30 @@
-<p>navigator works!</p>
+<table style="width: 100%;">
+    <tr>
+        <td>
+            <div class="container">
+                <ya-map 
+                [center]="[62.026734, 129.737444]" 
+                [zoom]="12"
+                [state]="{
+                  controls: [
+                    'zoomControl',
+                    'fullscreenControl'
+                  ]
+                }"
+                (ready)="onMapReady($event)"></ya-map>
+            </div>
+        </td>
+        <td style="width: 20%;">
+            <div *ngFor="let mark of placemarks; index as i;">
+                <mat-card>
+                    <mat-card-actions>
+                        <span style="cursor:pointer;" (click)="mapcenter(mark.latitude,mark.longitude);">ID: #{{mark.id}}</span>
+                      <button mat-button (click)="markAccept(mark.id)">Одобрить</button>
+                      <button mat-button>Отклонить</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </div>
+            
+        </td>
+    </tr>
+</table>

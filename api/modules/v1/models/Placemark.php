@@ -12,12 +12,13 @@ use yii\web\HttpException;
  *
  * @property int $id
  * @property string $user_id
+ * @property string $request_id
  * @property string $longitude
  * @property string $latitude
  * @property string $comment
  *
  */
-class Placemarks extends ActiveRecord {
+class Placemark extends ActiveRecord {
 
     /**
      * {@inheritdoc}
@@ -33,10 +34,10 @@ class Placemarks extends ActiveRecord {
     public function rules()
     {
         return [
-            [['user_id', 'longitude', 'latitude'], 'required'],
+            [['request_id','user_id', 'longitude', 'latitude'], 'required'],
             [['longitude','latitude'], 'string', 'max' => 255],
             [['comment'], 'string'],
-            [['user_id'], 'integer'],
+            [['user_id','request_id'], 'integer'],
         ];
     }
 
@@ -48,9 +49,36 @@ class Placemarks extends ActiveRecord {
         return [
             'id' => 'ID',
             'user_id' => 'User ID',
+            'request_id' => 'Request ID',
             'longitude' => 'Longitude',
             'latitude' => 'Latitude',
             'comment' => 'Comment',
         ];
+    }
+
+    public static function markAccept($request)
+    {
+        $requestMark = Request::findOne(['id' => $request['id']]);
+        $placemark = new PlaceMark;
+        $placemark->user_id = $requestMark->user_id;
+        $placemark->request_id = $requestMark->id;
+        $placemark->latitude = $requestMark->latitude;
+        $placemark->longitude = $requestMark->longitude;
+        $placemark->comment = $requestMark->comment;
+        $placemark->save();
+        $requestMark->delete();
+        $response = [
+            'name' => 'markAccept',
+            'message' => 'PlaceMark '.$placemark->latitude.' accepted.',
+            'code' => 200,
+            'status' => 'success',
+            'data' => [
+                'id' => $placemark->request_id,
+                'latitude' => $placemark->latitude,
+                'longitude' => $placemark->longitude,
+                'comment' => $placemark->comment
+            ],
+        ];
+        return $response;
     }
 }
