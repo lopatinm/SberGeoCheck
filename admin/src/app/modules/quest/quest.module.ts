@@ -16,6 +16,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { QuestRoutingModule } from './quest.routing';
 import { ErrorModule } from 'src/app/dialogs/error/error.module';
 import { AddquestComponent } from './addquest/addquest.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 const mapConfig: YaConfig = {
   apikey: '64abfa2f-a2e0-47cf-85bc-2084c90754cb',
@@ -42,8 +44,10 @@ const mapConfig: YaConfig = {
     MatIconModule,
     MatCardModule,
     MatDialogModule,
-    ErrorModule
+    ErrorModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [QuestService],
+  providers: [QuestService,MatDatepickerModule],
 })
 export class QuestModule { }

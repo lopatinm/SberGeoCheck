@@ -1,1 +1,114 @@
 
+<div style="width: 60%">
+    <form class="form" [formGroup]="addForm">
+
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="category_id">category_id</mat-label>
+            <input matInput id="category_id" type="number"  formControlName="category_id">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label for="title">title</mat-label>
+          <input matInput id="title" type="text"  formControlName="title">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="info">info</mat-label>
+            <textarea matInput id="info" formControlName="info"></textarea>
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="about">about</mat-label>
+            <textarea matInput id="about" formControlName="about"></textarea>
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="img">img</mat-label>
+            <input matInput id="img" type="text"  formControlName="img">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="level">level</mat-label>
+            <input matInput id="level" type="text" formControlName="level">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="timek">timek</mat-label>
+            <input matInput id="timek" type="text"  formControlName="timek">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+         <mat-form-field appearance="fill">
+            <mat-label for="datestart">datestart</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="datestart" id="datestart">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker touchUi #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label for="dateend">dateend</mat-label>
+            <input matInput [matDatepicker]="picker1" formControlName="dateend" id="dateend">
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker touchUi #picker1></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="rating">rating</mat-label>
+            <input matInput id="rating" type="number"  formControlName="rating">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="comments">comments</mat-label>
+            <input matInput id="comments" type="text"  formControlName="comments">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="price">price</mat-label>
+            <input matInput id="price" type="text"  formControlName="price">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+        
+        Выберите место сбора
+        <div class="container">
+            <ya-map 
+            [center]="[62.026734, 129.737444]" 
+            [zoom]="12"
+            [state]="{
+              controls: [
+                'zoomControl',
+                'fullscreenControl'
+              ]
+            }"
+            (yaclick)="onMapClick($event)"></ya-map>
+        </div>
+
+        <button mat-raised-button color="primary" (click)="addQuest()">Добавить</button>
+
+
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="latitude">latitude</mat-label>
+            <input matInput id="latitude" type="text"  formControlName="latitude">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+      
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label for="longitude">longitude</mat-label>
+            <input matInput id="longitude" type="text"  formControlName="longitude">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+      </form>
+</div>
+

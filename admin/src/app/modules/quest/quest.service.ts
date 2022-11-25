@@ -22,19 +22,13 @@ export class QuestService {
   constructor(private http: HttpClient,
               private dialog: MatDialog) { }
 
-  public getRequests(): Observable<any> {
-    return this.http.get(this.apiUrl + 'request', this.options).pipe(
+  public getQuest(): Observable<any> {
+    return this.http.get(this.apiUrl + 'quest', this.options).pipe(
       timeout(30000)
     );
   }
 
-  public getMarks(): Observable<any> {
-    return this.http.get(this.apiUrl + 'placemark', this.options).pipe(
-      timeout(30000)
-    );
-  }
-
-  public deleteRequest(data: any): Observable<any> {
+  public deleteQuest(data: any): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
@@ -48,7 +42,7 @@ export class QuestService {
       );
   }
 
-  public markAccept(data: any): Observable<any> {
+  public addQuest(data: any): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
@@ -56,21 +50,7 @@ export class QuestService {
     });
     const options = {headers: headers};
 
-    return this.http.post<any>(this.apiUrl+'placemark/accept', data, options)
-      .pipe(
-        catchError(this.handleError('data', data))
-      );
-  }
-
-  public markRemove(data: any): Observable<any> {
-    this.user = JSON.parse(localStorage.getItem("user")!);
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + this.user.token
-    });
-    const options = {headers: headers};
-
-    return this.http.post<any>(this.apiUrl+'placemark/remove', data, options)
+    return this.http.post<any>(this.apiUrl+'quest', data, options)
       .pipe(
         catchError(this.handleError('data', data))
       );

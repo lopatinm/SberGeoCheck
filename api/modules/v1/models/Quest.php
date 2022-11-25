@@ -10,7 +10,7 @@ use yii\web\HttpException;
 /**
  * This is the model class for table "quests".
  *
- * @property int $catgory_id
+ * @property int $category_id
  * @property int $user_id
  * @property string $title
  * @property string $info
@@ -44,9 +44,9 @@ class Quest extends ActiveRecord {
     {
         return [
             [['user_id', 'longitude', 'latitude'], 'required'],
-            [['longitude','latitude', 'title', 'img', 'level', 'timek', 'datestart', 'dateend', ], 'string', 'max' => 255],
+            [['longitude','latitude', 'title', 'img', 'level', 'timek', 'datestart', 'dateend', 'price'], 'string', 'max' => 255],
             [['comments', 'info', 'about'], 'string'],
-            [['user_id', 'rating', 'catgory_id'], 'integer'],
+            [['user_id', 'rating', 'category_id'], 'integer'],
         ];
     }
 
@@ -57,7 +57,7 @@ class Quest extends ActiveRecord {
     {
         return [
             'id' => 'ID',
-            'catgory_id' => 'Catgory ID',
+            'category_id' => 'Category ID',
             'user_id' => 'User ID',
             'title' => 'Title',
             'info' => 'Info',
