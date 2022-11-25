@@ -19,7 +19,7 @@
                 <mat-card>
                     <mat-card-actions>
                         <span style="cursor:pointer;" (click)="mapcenter(mark.latitude,mark.longitude);">ID: #{{mark.id}}</span>
-                      <button mat-button (click)="markAccept(mark.id)" *ngIf="mark.status">Одобрить</button>
+                      <button mat-button (click)="markAccept(mark.id, i)" *ngIf="mark.status">Одобрить</button>
                       <button mat-button (click)="requestDelete(mark.id, i)">Отклонить</button>
                     </mat-card-actions>
                   </mat-card>

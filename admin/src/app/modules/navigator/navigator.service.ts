@@ -62,6 +62,20 @@ export class NavigatorService {
       );
   }
 
+  public markRemove(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.post<any>(this.apiUrl+'placemark/remove', data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error);

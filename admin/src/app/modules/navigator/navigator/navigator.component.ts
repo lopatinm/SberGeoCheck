@@ -13,7 +13,6 @@ export class NavigatorComponent implements OnInit{
 
   map: ymaps.Map | undefined;
   placemarks: Mark[] | undefined;
-  
 
   constructor(private appService: AppService,
     private navigatorService: NavigatorService) {    
@@ -52,33 +51,44 @@ export class NavigatorComponent implements OnInit{
     this.map?.setCenter([lat,lon]);
   }
 
-  markAccept(id:any){
+  markAccept(id:any, i: any){
     this.navigatorService.markAccept({'id': id}).subscribe(result => {
-
+      if(this.placemarks){
+        this.placemarks[i].status = false;
+      }
   });
   }
 
   requestDelete(id:any, i:any){
     
+    if(this.placemarks){
+      const mark = this.placemarks[i];
+      
+      if(mark.status){
 
-    this.navigatorService.deleteRequest(id).subscribe(result => {
-      this.placemarks?.splice(i,1);
-      this.map?.geoObjects.each((geoObject) => { 
-        this.map?.geoObjects.remove(geoObject);
-      });
-
-      this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any;}) => {
-        let myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
-            {balloonContent: 'ID: #'+request.id}, {
-            iconLayout: 'default#image',
-            iconImageHref: 'assets/marker.png',
-            iconImageSize: [30, 42],
-            iconImageOffset: [-3, -42]
+      }else{
+        this.navigatorService.deleteRequest(id).subscribe(result => {
+          this.placemarks?.splice(i,1);
+          this.map?.geoObjects.each((geoObject) => { 
+            this.map?.geoObjects.remove(geoObject);
+          });
+    
+          this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any;}) => {
+            let myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+                {balloonContent: 'ID: #'+request.id}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'assets/marker.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            });
+            this.map?.geoObjects.add(myPlacemark);
+          });
+    
         });
-        this.map?.geoObjects.add(myPlacemark);
-      });
+      }
+      
 
-    });
+    }    
   }
 
   ngOnInit(): void {
