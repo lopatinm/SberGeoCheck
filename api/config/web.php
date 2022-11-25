@@ -88,7 +88,8 @@ $config = [
                     'controller' => [
                         'v1/user',
                         'v1/request',
-                        'v1/placemark'
+                        'v1/placemark',
+                        'v1/quest'
                     ],
                     'extraPatterns' => [
                         'POST login' => 'login',

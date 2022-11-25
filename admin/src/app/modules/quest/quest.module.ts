@@ -15,6 +15,7 @@ import {MatTableModule} from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { QuestRoutingModule } from './quest.routing';
 import { ErrorModule } from 'src/app/dialogs/error/error.module';
+import { AddquestComponent } from './addquest/addquest.component';
 
 const mapConfig: YaConfig = {
   apikey: '64abfa2f-a2e0-47cf-85bc-2084c90754cb',
@@ -24,6 +25,7 @@ const mapConfig: YaConfig = {
 @NgModule({
   declarations: [
     QuestComponent,
+    AddquestComponent,
   ],
   imports: [
     CommonModule,

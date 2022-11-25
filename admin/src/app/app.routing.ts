@@ -11,10 +11,10 @@ const routes: Routes = [
   canActivateChild: [AppGuard],
     children: [
       { path: '', component: DashboardComponent},
-      { path: 'navigator.html', loadChildren: () => import('./modules/navigator/navigator.module').then(m => m.NavigatorModule)},
-      { path: 'quest.html', loadChildren: () => import('./modules/quest/quest.module').then(m => m.QuestModule)},
+      { path: 'navigator', loadChildren: () => import('./modules/navigator/navigator.module').then(m => m.NavigatorModule)},
+      { path: 'quest', loadChildren: () => import('./modules/quest/quest.module').then(m => m.QuestModule)},
     ]},
-  { path: 'login.html', component: LoginComponent},
+  { path: 'login', component: LoginComponent},
   { path: '**', redirectTo: '' }
 ];
 
