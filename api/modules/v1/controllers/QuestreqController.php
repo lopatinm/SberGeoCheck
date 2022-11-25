@@ -24,7 +24,7 @@ class QuestreqController extends ActiveController
             ],
         ]);
         $behaviors['authenticator']['class'] = HttpBearerAuth::className();
-        $behaviors['authenticator']['only'] = ['create', 'update', 'delete'];
+        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'index'];
 
         return $behaviors;
     }
@@ -38,14 +38,25 @@ class QuestreqController extends ActiveController
 
     public function actionIndex()
     {
-        $model = new Questreq;
-        $activeData = new ActiveDataProvider([
-            'query' => $model::find()->orderBy("id DESC"),
-            'pagination' => [
-                'defaultPageSize' => -1,
-                'pageSizeLimit' => -1,
-            ],
-        ]);
+        if (isset(Yii::$app->authManager->getRolesByUser(Yii::$app->user->identity['id'])['manager'])){
+            $model = new Questreq;
+            $activeData = new ActiveDataProvider([
+                'query' => $model::find()->orderBy("id DESC"),
+                'pagination' => [
+                    'defaultPageSize' => -1,
+                    'pageSizeLimit' => -1,
+                ],
+            ]);
+        }else{
+            $model = new Questreq;
+            $activeData = new ActiveDataProvider([
+                'query' => $model::find()->where(array('user_id' => Yii::$app->user->identity['id']))->orderBy("id DESC"),
+                'pagination' => [
+                    'defaultPageSize' => -1,
+                    'pageSizeLimit' => -1,
+                ],
+            ]);
+        }
         return $activeData;
 
     }

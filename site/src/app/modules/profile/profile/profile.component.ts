@@ -4,6 +4,7 @@ import { YaReadyEvent } from 'angular8-yandex-maps';
 import { AppService } from 'src/app/app.service';
 import { ProfileService } from '../profile.service';
 import { Mark } from 'src/app/models/mark';
+import { Questreq } from 'src/app/models/questreq';
 
 @Component({
   selector: 'app-profile',
@@ -14,7 +15,7 @@ export class ProfileComponent {
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
   map: ymaps.Map | undefined;
   placemarks: Mark[] | undefined;
-
+  questreq: Questreq[] | undefined;
   constructor(private profileService: ProfileService,
     private appService: AppService){
 
@@ -34,9 +35,9 @@ export class ProfileComponent {
           let mark = {id: el.request_id, latitude: el.latitude, longitude: el.longitude, comment: el.comment, status: false};
           this.placemarks?.push(mark);
         });
-        this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any;}) => {
+        this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any; comment: any;}) => {
           var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
-              {balloonContent: 'ID: #'+request.id}, {
+              {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
               iconLayout: 'default#image',
               iconImageHref: 'assets/marker.png',
               iconImageSize: [30, 42],
@@ -48,7 +49,19 @@ export class ProfileComponent {
       });
       
     });
+
+    this.profileService.getQuestreq().subscribe(result => {
+        this.questreq = result;
+    });
   }
+  
+  
+  questreqDelete(id:any, i:any){
+    this.profileService.deleteQuestreq(id).subscribe(result => {
+      this.questreq?.splice(i,1);
+    });
+  }
+
 
   requestDelete(id:any, i:any){
     

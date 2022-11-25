@@ -21,8 +21,8 @@ export class QuestComponent {
     });
   }
 
-  addQuestreq(id: any){
-    this.questService.addQuestreq(id).subscribe(result => {
+  addQuestreq(id: any, title: any){
+    this.questService.addQuestreq(id, title).subscribe(result => {
       this.appService.loader.emit(false);
         this.router.navigate(['/profile']);
     });

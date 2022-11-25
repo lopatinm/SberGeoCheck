@@ -14,6 +14,7 @@ use yii\web\HttpException;
  * @property int $user_id
  * @property int $quest_id
  * @property int $status
+ * @property string $title
  *
  */
 class Questreq extends ActiveRecord {
@@ -34,6 +35,7 @@ class Questreq extends ActiveRecord {
         return [
             [['user_id', 'quest_id', 'status'], 'required'],
             [['user_id', 'quest_id', 'status'], 'integer'],
+            [['title'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,6 +49,7 @@ class Questreq extends ActiveRecord {
             'user_id' => 'User ID',
             'quest_id' => 'Quest ID',
             'status' => 'Status',
+            'title' => 'Title',
         ];
     }
 }

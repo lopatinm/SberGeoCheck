@@ -22,6 +22,20 @@ export class ProfileService {
   constructor(private http: HttpClient,
               private dialog: MatDialog) { }
 
+  
+    public getQuestreq(): Observable<any> {
+        this.user = JSON.parse(localStorage.getItem("user")!);
+        const headers = new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + this.user.token
+        });
+        const options = {headers: headers};
+            
+      return this.http.get(this.apiUrl + 'questreq', options).pipe(
+        timeout(30000)
+      );
+  }
+  
   public getMarks(): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
@@ -61,6 +75,7 @@ export class ProfileService {
       );
   }
 
+
   public deleteRequest(data: any): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
@@ -70,6 +85,20 @@ export class ProfileService {
     const options = {headers: headers};
 
     return this.http.delete<any>(this.apiUrl+'request/'+data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
+  public deleteQuestreq(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.delete<any>(this.apiUrl+'questreq/'+data, options)
       .pipe(
         catchError(this.handleError('data', data))
       );
