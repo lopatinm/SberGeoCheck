@@ -3,4 +3,5 @@ export class Mark {
     public latitude: string | undefined;
     public longitude: string | undefined;
     public comment: string | undefined;
+    public status: boolean | undefined;
   }

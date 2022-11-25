@@ -12890,3 +12890,1401 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1669302591.5872
     'REQUEST_TIME' => 1669302591
 ]
+2022-11-25 01:26:13 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/request/accept in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/acce...', Array)
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#2 {main}
+2022-11-25 01:26:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '65414'
+    'REDIRECT_URL' => '/v1/request/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669339573.6734
+    'REQUEST_TIME' => 1669339573
+]
+2022-11-25 01:27:03 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/request/accept in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/acce...', Array)
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#2 {main}
+2022-11-25 01:27:03 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '49155'
+    'REDIRECT_URL' => '/v1/request/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669339622.9953
+    'REQUEST_TIME' => 1669339622
+]
+2022-11-25 01:40:47 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected ',', expecting function (T_FUNCTION) or const (T_CONST) in C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php:51
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\v1\\...')
+#1 [internal function]: spl_autoload_call('app\\modules\\v1\\...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(643): class_exists('app\\modules\\v1\\...')
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('placemark')
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(594): yii\base\Module->createController('options')
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('placemark/optio...')
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/op...', Array)
+#7 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#9 {main}
+2022-11-25 01:40:47 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'POST'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '50889'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669340447.1972
+    'REQUEST_TIME' => 1669340447
+]
+2022-11-25 01:45:19 [::1][][upi2odhuohomrfh2ck20uej9fr][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\modules\v1\models\Placemark' in file: C:\Projects\SberGeoCheck\api/modules/v1/models/Placemark.php. Namespace missing? in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\v1\\...')
+#1 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): spl_autoload_call('app\\modules\\v1\\...')
+#2 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#7 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#9 {main}
+2022-11-25 01:45:19 [::1][][upi2odhuohomrfh2ck20uej9fr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '51601'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669340719.2237
+    'REQUEST_TIME' => 1669340719
+]
+2022-11-25 01:46:24 [::1][][tbr5jnc3120ren8lr97a598kka][error][yii\base\ErrorException:2] yii\base\ErrorException: Use of undefined constant response - assumed 'response' (this will throw an Error in a future version of PHP) in C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php:78
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(78): yii\web\ErrorHandler->handleError('2', ''Use of undefin...', ''C:\\\\Projects\\\\...', '78', '['request' => [...')
+#1 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept('['id' => 9]')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): app\modules\v1\controllers\PlacemarkController->actionAccept()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php:57}('[0 => class app...', '[]')
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams('[]')
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): app\modules\v1\controllers\PlacemarkController->runAction(''accept'', '[]')
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\web\Application->runAction(''v1/placemark/a...', '[]')
+#7 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest('class yii\\web\\R...')
+#8 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\web\Application->run()
+#9 {main}
+2022-11-25 01:46:23 [::1][][tbr5jnc3120ren8lr97a598kka][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '51748'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669340783.8479
+    'REQUEST_TIME' => 1669340783
+]
+2022-11-25 01:50:46 [::1][][vdlav1kg4ovgdl30fr6jkpp04k][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: app\modules\v1\models\Request::remove() in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Component.php:301
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(66): yii\base\Component->__call('remove', Array)
+#1 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#2 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#7 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#9 {main}
+2022-11-25 01:50:45 [::1][][vdlav1kg4ovgdl30fr6jkpp04k][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '52355'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669341045.5369
+    'REQUEST_TIME' => 1669341045
+]
+2022-11-25 01:58:22 [::1][][iedgbt48u0ovvlhbj0vilo9idd][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'user_id' of non-object in C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php:63
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(63): yii\web\ErrorHandler->handleError('8', ''Trying to get ...', ''C:\\\\Projects\\\\...', '63', '['request' => [...')
+#1 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept('['id' => 6]')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): app\modules\v1\controllers\PlacemarkController->actionAccept()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php:57}('[0 => class app...', '[]')
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams('[]')
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): app\modules\v1\controllers\PlacemarkController->runAction(''accept'', '[]')
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\web\Application->runAction(''v1/placemark/a...', '[]')
+#7 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest('class yii\\web\\R...')
+#8 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\web\Application->run()
+#9 {main}
+2022-11-25 01:58:21 [::1][][iedgbt48u0ovvlhbj0vilo9idd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '53448'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669341501.9634
+    'REQUEST_TIME' => 1669341501
+]
+2022-11-25 02:05:33 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#3 {main}
+2022-11-25 02:05:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://api.sbergeocheck.ru/v1/placemark'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '64911'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669341933.1
+    'REQUEST_TIME' => 1669341933
+]
+2022-11-25 02:39:25 [::1][][c3lg2937b4po5054ksn9572c1p][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 8 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('8')
+#1 [internal function]: yii\rest\DeleteAction->run('8')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:39:25 [::1][][c3lg2937b4po5054ksn9572c1p][info][application] $_GET = [
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '52931'
+    'REDIRECT_URL' => '/v1/request/8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/8'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669343965.4682
+    'REQUEST_TIME' => 1669343965
+]
+2022-11-25 02:39:32 [::1][][0miktb0qgsjeli1nd8gr3tgd30][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:39:32 [::1][][0miktb0qgsjeli1nd8gr3tgd30][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '52945'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669343972.7382
+    'REQUEST_TIME' => 1669343972
+]
+2022-11-25 02:39:37 [::1][][ijic2i3ia1k0mjvidnk7kgpjsq][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 12 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('12')
+#1 [internal function]: yii\rest\DeleteAction->run('12')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:39:37 [::1][][ijic2i3ia1k0mjvidnk7kgpjsq][info][application] $_GET = [
+    'id' => '12'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '52960'
+    'REDIRECT_URL' => '/v1/request/12'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/12'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669343977.8352
+    'REQUEST_TIME' => 1669343977
+]
+2022-11-25 02:40:15 [::1][][84h7bbf655eksi7s9megnkifgt][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:40:15 [::1][][84h7bbf655eksi7s9megnkifgt][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '53054'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344015.245
+    'REQUEST_TIME' => 1669344015
+]
+2022-11-25 02:40:20 [::1][][9vgr6vorcu0c1opetbdudikgq8][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\DeleteAction->run('7')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:40:20 [::1][][9vgr6vorcu0c1opetbdudikgq8][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '53067'
+    'REDIRECT_URL' => '/v1/request/7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/7'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344020.79
+    'REQUEST_TIME' => 1669344020
+]
+2022-11-25 02:41:09 [::1][][fihrkr8u6p81fml2frmg2tj202][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\DeleteAction->run('7')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:41:09 [::1][][fihrkr8u6p81fml2frmg2tj202][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '58491'
+    'REDIRECT_URL' => '/v1/request/7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/7'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344069.3243
+    'REQUEST_TIME' => 1669344069
+]
+2022-11-25 02:41:12 [::1][][gj0tdk6en0cse76pm16ntflomm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:41:12 [::1][][gj0tdk6en0cse76pm16ntflomm][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '58491'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344072.8263
+    'REQUEST_TIME' => 1669344072
+]
+2022-11-25 02:42:26 [::1][][tn26hm5oskuu0lh3bf7qjdp7n6][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\DeleteAction->run('7')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:42:26 [::1][][tn26hm5oskuu0lh3bf7qjdp7n6][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '58717'
+    'REDIRECT_URL' => '/v1/request/7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/7'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344146.658
+    'REQUEST_TIME' => 1669344146
+]
+2022-11-25 02:43:10 [::1][][682qd6qrrujklqvp9qjnqjkaqo][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:43:10 [::1][][682qd6qrrujklqvp9qjnqjkaqo][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '58816'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344190.4902
+    'REQUEST_TIME' => 1669344190
+]
+2022-11-25 02:46:36 [::1][][2phgrafraucf2pq81ekcj0tspi][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\DeleteAction->run('7')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:46:36 [::1][][2phgrafraucf2pq81ekcj0tspi][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '59263'
+    'REDIRECT_URL' => '/v1/request/7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/7'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344396.8261
+    'REQUEST_TIME' => 1669344396
+]
+2022-11-25 02:46:48 [::1][][c2mh3gidaqeb57u7rglbhq3vuu][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:46:48 [::1][][c2mh3gidaqeb57u7rglbhq3vuu][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '59297'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344408.8931
+    'REQUEST_TIME' => 1669344408
+]
+2022-11-25 02:47:11 [::1][][0nap4k0367tag8sesrnvo32131][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\DeleteAction->run('7')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:47:11 [::1][][0nap4k0367tag8sesrnvo32131][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '59354'
+    'REDIRECT_URL' => '/v1/request/7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/7'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344431.5063
+    'REQUEST_TIME' => 1669344431
+]
+2022-11-25 02:47:14 [::1][][cb734di9m9mu4a3e0cnpp5kg9u][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 6 in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel('6')
+#1 [internal function]: yii\rest\DeleteAction->run('6')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/request/dele...', Array)
+#6 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#8 {main}
+2022-11-25 02:47:14 [::1][][cb734di9m9mu4a3e0cnpp5kg9u][info][application] $_GET = [
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '59354'
+    'REDIRECT_URL' => '/v1/request/6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/request/6'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669344434.1723
+    'REQUEST_TIME' => 1669344434
+]

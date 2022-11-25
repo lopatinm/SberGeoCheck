@@ -28,6 +28,26 @@ export class NavigatorService {
     );
   }
 
+  public getMarks(): Observable<any> {
+    return this.http.get(this.apiUrl + 'placemark', this.options).pipe(
+      timeout(30000)
+    );
+  }
+
+  public deleteRequest(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.delete<any>(this.apiUrl+'request/'+data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
   public markAccept(data: any): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
