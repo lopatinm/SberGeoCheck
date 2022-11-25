@@ -64,7 +64,7 @@ export class AddcommentComponent implements OnInit{
     this.appService.addcomment(this.addForm.value).subscribe(result => {
       this.appService.loader.emit(false);
       this.message = "";
-        this.router.navigate(['/']);
+        this.router.navigate(['/profile']);
     });
   }
 

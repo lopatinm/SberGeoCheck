@@ -1,28 +1,19 @@
 
 <div>{{message}}</div>
-<form class="form" [formGroup]="addForm">
+<form [formGroup]="addForm">
   
-  <mat-form-field class="full-width" appearance="fill">
-    <mat-label for="comment">comment</mat-label>
+  <mat-form-field class="full-width" appearance="outline" style="margin: 20px;">
+    <mat-label for="comment">Введите комментарий</mat-label>
     <input matInput id="comment" type="text"  formControlName="comment">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
   </mat-form-field>
-  <mat-form-field class="full-width" appearance="fill">
-    <mat-label for="latitude">latitude</mat-label>
-    <input matInput id="latitude" type="text"  formControlName="latitude">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-  </mat-form-field>
-  <mat-form-field class="full-width" appearance="fill">
-    <mat-label for="longitude">longitude</mat-label>
-    <input matInput id="longitude" type="text"  formControlName="longitude">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-  </mat-form-field>
-  <mat-form-field class="full-width" appearance="fill">
-    <mat-label for="inn">inn</mat-label>
+  <input id="latitude" type="hidden"  formControlName="latitude">
+  <input id="longitude" type="hidden"  formControlName="longitude">
+  <mat-form-field class="full-width" appearance="outline" style="margin: 20px;">
+    <mat-label for="inn">Введите ИНН(необязательно)</mat-label>
     <input matInput id="inn" type="text"  formControlName="inn">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
   </mat-form-field>
-  <button mat-button (click)="addcomment()">Добавить</button>
+  <span class="decs">Нажмите на карту, чтобы вставить метку.</span>
+  <button mat-raised-button color="primary" (click)="addcomment()" style="float: right; margin: 20px;">Добавить</button>
 </form>
 <div class="container">
     <ya-map 

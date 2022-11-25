@@ -24,7 +24,7 @@ class PlacemarkController extends ActiveController
             ],
         ]);
         $behaviors['authenticator']['class'] = HttpBearerAuth::className();
-        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'accept', 'remove'];
+        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'accept', 'remove', 'index'];
 
         return $behaviors;
     }
@@ -38,14 +38,26 @@ class PlacemarkController extends ActiveController
 
     public function actionIndex()
     {
-        $model = new Placemark;
-        $activeData = new ActiveDataProvider([
-            'query' => $model::find()->orderBy("id DESC"),
-            'pagination' => [
-                'defaultPageSize' => -1,
-                'pageSizeLimit' => -1,
-            ],
-        ]);
+        if (isset(Yii::$app->authManager->getRolesByUser(Yii::$app->user->identity['id'])['manager'])){
+            $model = new Placemark;
+            $activeData = new ActiveDataProvider([
+                'query' => $model::find()->orderBy("id DESC"),
+                'pagination' => [
+                    'defaultPageSize' => -1,
+                    'pageSizeLimit' => -1,
+                ],
+            ]);
+        }else{
+            $model = new Placemark;
+            $activeData = new ActiveDataProvider([
+                'query' => $model::find()->where(array('user_id' => Yii::$app->user->identity['id']))->orderBy("id DESC"),
+                'pagination' => [
+                    'defaultPageSize' => -1,
+                    'pageSizeLimit' => -1,
+                ],
+            ]);
+        }
+        
         return $activeData;
 
     }
