@@ -20,6 +20,7 @@ export class AddcommentComponent implements OnInit{
     latitude: new FormControl(''),
     longitude: new FormControl(''),
     comment: new FormControl(''),
+    inn: new FormControl(''),
     user_id: new FormControl(''),
   });
   
