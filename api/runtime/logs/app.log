@@ -14288,3 +14288,309 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1669344434.1723
     'REQUEST_TIME' => 1669344434
 ]
+2022-11-25 04:00:33 [::1][][c663mumjugd6mv00q3bicd44cd][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+The SQL being executed was: INSERT INTO `placemarks` (`user_id`, `request_id`, `latitude`, `longitude`, `comment`) VALUES (23, 16, '62.048660', '129.70603', NULL) in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pl...')
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'comment' cannot be null
+)
+
+2022-11-25 04:00:33 [::1][][c663mumjugd6mv00q3bicd44cd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '9'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '50488'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669348833.2469
+    'REQUEST_TIME' => 1669348833
+]
+2022-11-25 04:47:13 [::1][][kj62s12ntlhgc0bs4fcfvcb4kr][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+The SQL being executed was: INSERT INTO `placemarks` (`user_id`, `request_id`, `latitude`, `longitude`, `comment`) VALUES (23, 16, '62.048660', '129.70603', NULL) in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pl...')
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'comment' cannot be null
+)
+
+2022-11-25 04:47:13 [::1][][kj62s12ntlhgc0bs4fcfvcb4kr][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '9'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '56323'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669351633.2138
+    'REQUEST_TIME' => 1669351633
+]
+2022-11-25 04:53:48 [::1][][264doa18d7ce9ib4htflvsbsi4][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+The SQL being executed was: INSERT INTO `placemarks` (`user_id`, `request_id`, `latitude`, `longitude`, `comment`) VALUES (23, 16, '62.048660', '129.70603', NULL) in C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pl...')
+#1 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `pl...')
+#2 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('placemarks', Array)
+#4 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Projects\SberGeoCheck\api\modules\v1\models\Placemark.php(68): yii\db\BaseActiveRecord->save()
+#7 C:\Projects\SberGeoCheck\api\modules\v1\controllers\PlacemarkController.php(62): app\modules\v1\models\Placemark::markAccept(Array)
+#8 [internal function]: app\modules\v1\controllers\PlacemarkController->actionAccept()
+#9 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('accept', Array)
+#12 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/placemark/ac...', Array)
+#13 C:\Projects\SberGeoCheck\api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Projects\SberGeoCheck\api\public_html\index.php(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'comment' cannot be null
+)
+
+2022-11-25 04:53:48 [::1][][264doa18d7ce9ib4htflvsbsi4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => null
+    '__authKey' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api.sbergeocheck.ru'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '9'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ORIGIN' => 'http://localhost:4200'
+    'HTTP_REFERER' => 'http://localhost:4200/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files (x86)\\Intel\\TXE Components\\DAL\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.51 (Win64) PHP/7.4.26 Server at api.sbergeocheck.ru Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.51 (Win64) PHP/7.4.26'
+    'SERVER_NAME' => 'api.sbergeocheck.ru'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Projects/SberGeoCheck/api/public_html'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/Projects/SberGeoCheck/api/public_html/index.php'
+    'REMOTE_PORT' => '57201'
+    'REDIRECT_URL' => '/v1/placemark/accept'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/v1/placemark/accept'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1669352028.4892
+    'REQUEST_TIME' => 1669352028
+]
