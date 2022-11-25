@@ -22,6 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { AddcommentComponent } from './pages/addcomment/addcomment.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 const maskConfig: Partial<IConfig> = {
@@ -59,7 +60,8 @@ const mapConfig: YaConfig = {
     MatProgressBarModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxMaskModule.forRoot(maskConfig)
+    NgxMaskModule.forRoot(maskConfig),
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

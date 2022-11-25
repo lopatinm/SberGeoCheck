@@ -9,6 +9,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { AngularYandexMapsModule, YaConfig } from 'angular8-yandex-maps';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { ProfileService } from './profile.service';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ErrorModule } from 'src/app/dialogs/error/error.module';
 
 const mapConfig: YaConfig = {
   apikey: '64abfa2f-a2e0-47cf-85bc-2084c90754cb',
@@ -28,7 +31,10 @@ const mapConfig: YaConfig = {
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatExpansionModule
-  ]
+    MatExpansionModule,
+    MatDialogModule,
+    ErrorModule
+  ],
+  providers: [ProfileService],
 })
 export class ProfileModule { }

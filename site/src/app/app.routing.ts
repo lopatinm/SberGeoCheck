@@ -15,6 +15,7 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent},
       { path: 'registration', component: RegistrationComponent},
       { path: 'profile', loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule)},
+      { path: 'quest', loadChildren: () => import('./modules/quest/quest.module').then(m => m.QuestModule)},
     ]},
   
   { path: '**', redirectTo: '' }
