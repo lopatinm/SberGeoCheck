@@ -29,4 +29,22 @@
       
         </mat-expansion-panel>
       </mat-accordion>
+
+      <div class="example-action-buttons">
+        Мои заявки
+      </div>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel *ngFor="let mark of placemarks; index as i">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ID: #{{mark.id}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <button mat-icon-button (click)="requestDelete(mark.id, i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+      
+        </mat-expansion-panel>
+      </mat-accordion>
 </div>

@@ -2,7 +2,7 @@
 
 namespace app\modules\v1\controllers;
 
-use app\modules\v1\models\Quest;
+use app\modules\v1\models\Questreq;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\auth\HttpBearerAuth;
@@ -12,9 +12,9 @@ use yii\rest\ActiveController;
 
 use yii\web\ForbiddenHttpException;
 
-class QuestController extends ActiveController
+class QuestreqController extends ActiveController
 {
-    public $modelClass = 'app\modules\v1\models\Quest';
+    public $modelClass = 'app\modules\v1\models\Questreq';
 
     public function behaviors()
     {
@@ -38,7 +38,7 @@ class QuestController extends ActiveController
 
     public function actionIndex()
     {
-        $model = new Quest;
+        $model = new Questreq;
         $activeData = new ActiveDataProvider([
             'query' => $model::find()->orderBy("id DESC"),
             'pagination' => [

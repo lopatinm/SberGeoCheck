@@ -1,1 +1,8 @@
-<ng-container *ngFor="let quest of quests">{{quest.title}}</ng-container>
+<ng-container *ngFor="let quest of quests">
+  <mat-card class="card">
+    <mat-card-content>{{quest.title}}</mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="addQuestreq(quest.id)">Подать заявку</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>

@@ -89,7 +89,8 @@ $config = [
                         'v1/user',
                         'v1/request',
                         'v1/placemark',
-                        'v1/quest'
+                        'v1/quest',
+                        'v1/questreq'
                     ],
                     'extraPatterns' => [
                         'POST login' => 'login',

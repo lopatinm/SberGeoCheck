@@ -28,6 +28,18 @@ export class QuestService {
     );
   }
 
+  public addQuestreq(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+    return this.http.post(this.apiUrl + 'questreq',{user_id: this.user.id, quest_id: data, status: 0}, options).pipe(
+      timeout(30000)
+    );
+  }
+
   public getRequestMarks(): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
