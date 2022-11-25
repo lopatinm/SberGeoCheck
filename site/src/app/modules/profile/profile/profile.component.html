@@ -1,0 +1,41 @@
+<div class="container">
+    <ya-map 
+    [center]="[62.026734, 129.737444]" 
+    [zoom]="12"
+    [state]="{
+      controls: [
+        'zoomControl',
+        'fullscreenControl'
+      ]
+    }"></ya-map>
+</div>
+<img src="/assets/plus.png" class="btnPlus" routerLink="/add-placemark">
+<div class="markList">
+    <div class="example-action-buttons">
+        Мои метки
+      </div>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ID: #1
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+      
+        </mat-expansion-panel>
+    
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                ID: #2
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          gnbghn
+        </mat-expansion-panel>
+      </mat-accordion>
+</div>

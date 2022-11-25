@@ -3,12 +3,12 @@
   }
   
   .card {
-    max-width: 250px;
+    max-width: 400px;
   }
   
   .form {
-    min-width: 150px;
-    max-width: 250px;
+    min-width: 100px;
+    max-width: 350px;
     width: 100%;
   }
   
@@ -18,4 +18,20 @@
   
   .error {
     color: brown;
+  }
+
+  .outer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .outer {
+    text-align: center;
   }

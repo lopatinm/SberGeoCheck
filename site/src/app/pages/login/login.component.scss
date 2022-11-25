@@ -1,14 +1,11 @@
-.container {
-    background-color: #DBDBDB;
-  }
-  
+ 
   .card {
     max-width: 450px;
   }
   
   .form {
-    min-width: 150px;
-    max-width: 450px;
+    min-width: 100px;
+    max-width: 350px;
     width: 100%;
   }
   
@@ -19,3 +16,20 @@
   .error {
     color: brown;
   }
+
+  .outer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .outer {
+    text-align: center;
+  }
+

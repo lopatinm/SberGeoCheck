@@ -1,10 +1,17 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Logo">
-      <mat-icon>menu</mat-icon>
-    </button>
+    <img src="/assets/logo.png" style="height: 50px; cursor: pointer;" routerLink="/"/>
     <span class="spacer"></span>
-    <button mat-icon-button routerLink="/login.html" aria-label="Авторизация">
-      <mat-icon>login</mat-icon>
+    <button mat-button routerLink="/" class="btn" aria-label="Навигатор">
+      Навигатор
+    </button>
+    <button mat-button routerLink="/quest" aria-label="Квесты">
+      Квесты
+    </button>
+    <button mat-button routerLink="/login" aria-label="Вход" *ngIf="!isLogged">
+      Вход
+    </button>
+    <button mat-button routerLink="/profile" aria-label="Вход" *ngIf="isLogged">
+      {{user.fullname}}
     </button>
   </mat-toolbar>
 <mat-progress-bar mode="indeterminate" *ngIf="loader"></mat-progress-bar>

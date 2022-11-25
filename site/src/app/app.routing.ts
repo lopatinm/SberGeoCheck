@@ -11,10 +11,12 @@ const routes: Routes = [
   {path: '', component: HomeComponent,
     children: [
       { path: '', component: DashboardComponent},
-      { path: 'addcomment.html', component: AddcommentComponent},
+      { path: 'add-placemark', component: AddcommentComponent},
+      { path: 'login', component: LoginComponent},
+      { path: 'registration', component: RegistrationComponent},
+      { path: 'profile', loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule)},
     ]},
-  { path: 'login.html', component: LoginComponent},
-  { path: 'registration.html', component: RegistrationComponent},
+  
   { path: '**', redirectTo: '' }
 ];
 

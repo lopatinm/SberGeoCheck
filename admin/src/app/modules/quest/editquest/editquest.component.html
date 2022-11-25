@@ -1,6 +1,6 @@
 
 <div style="width: 60%">
-    <form class="form" [formGroup]="addForm">
+    <form class="form" [formGroup]="editForm">
         <mat-form-field class="full-width" appearance="fill">
             <mat-label for="category_id">category_id</mat-label>
             <input matInput id="category_id" type="number"  formControlName="category_id">
@@ -91,10 +91,11 @@
                 'fullscreenControl'
               ]
             }"
-            (yaclick)="onMapClick($event)"></ya-map>
+            (yaclick)="onMapClick($event)"
+            (ready)="onMapReady($event)"></ya-map>
         </div>
 
-        <button mat-raised-button color="primary" (click)="addQuest()">Добавить</button>
+        <button mat-raised-button color="primary" (click)="saveQuest()">Сохранить</button>
 
 
         <input id="latitude" type="hidden"  formControlName="latitude">

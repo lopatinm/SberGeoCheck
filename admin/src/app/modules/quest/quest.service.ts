@@ -28,6 +28,20 @@ export class QuestService {
     );
   }
 
+  public saveQuest(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.put<any>(this.apiUrl+'quest/'+data.id, data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
   public deleteQuest(data: any): Observable<any> {
     this.user = JSON.parse(localStorage.getItem("user")!);
     const headers = new HttpHeaders({
