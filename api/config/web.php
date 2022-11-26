@@ -105,6 +105,9 @@ $config = [
                         'OPTIONS accept' => 'options',
                         'POST remove' => 'remove',
                         'OPTIONS remove' => 'options',
+                        'GET getreq' => 'getreq',
+                        'OPTIONS getreq' => 'options',
+                        
                     ]
                 ],
             ],

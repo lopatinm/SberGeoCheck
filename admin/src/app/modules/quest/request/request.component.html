@@ -1,0 +1,21 @@
+<mat-accordion multi>
+    <mat-expansion-panel *ngFor="let qr of questreq; index as i">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            ID: #{{qr.questreq?.id}}
+          Квест: {{qr.quest?.title}}
+          Пользователь: {{qr.user?.fullname}}
+          Статус: {{qr.questreq?.status}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+  
+      <button mat-icon-button (click)="deleteQuestreq(qr.questreq?.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+
+      <button mat-icon-button (click)="editQuestreq(qr.questreq)">
+        <mat-icon>done</mat-icon>
+      </button>
+  
+    </mat-expansion-panel>
+  </mat-accordion>

@@ -1,4 +1,5 @@
-<button mat-raised-button color="primary" routerLink="add">Добавить</button>
+<button mat-raised-button color="primary" routerLink="add" style="margin: 10px;">Добавить</button>
+<button mat-raised-button color="primary" routerLink="request" style="margin: 10px;">Заявки</button>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
@@ -17,7 +18,7 @@
 
     <ng-container matColumnDef="action">
       <th mat-header-cell *matHeaderCellDef> action </th>
-      <td mat-cell *matCellDef="let element"> <button (click)="editQuest(element.id)">Редактировать</button></td>
+      <td mat-cell *matCellDef="let element"> <button mat-raised-button color="primary" (click)="editQuest(element.id)">Редактировать</button></td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

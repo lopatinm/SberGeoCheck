@@ -22,6 +22,47 @@ export class QuestService {
   constructor(private http: HttpClient,
               private dialog: MatDialog) { }
 
+  public getQuestreq(): Observable<any> {
+        this.user = JSON.parse(localStorage.getItem("user")!);
+        const headers = new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + this.user.token
+        });
+        const options = {headers: headers};
+            
+      return this.http.get(this.apiUrl + 'questreq/getreq', options).pipe(
+        timeout(30000)
+      );
+  }
+
+  public deleteQuestreq(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.delete<any>(this.apiUrl+'questreq/'+data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
+  public editQuestreq(data: any): Observable<any> {
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+
+    return this.http.put<any>(this.apiUrl+'questreq/'+data.id, data, options)
+      .pipe(
+        catchError(this.handleError('data', data))
+      );
+  }
+
   public getQuest(): Observable<any> {
     return this.http.get(this.apiUrl + 'quest', this.options).pipe(
       timeout(30000)

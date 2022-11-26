@@ -239,7 +239,7 @@ class User extends ActiveRecord implements IdentityInterface
         try {
             $phone = static::trimPhone($request['phone']);
             $password = $request['password'];
-            $user = static::findByUsername("7".$phone);
+            $user = static::findByUsername($phone);
             if ($user && password_verify($password, $user->password)) {
                 try {
                     $user->token = Yii::$app->security->generateRandomString(64);

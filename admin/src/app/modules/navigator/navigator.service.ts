@@ -23,13 +23,25 @@ export class NavigatorService {
               private dialog: MatDialog) { }
 
   public getRequests(): Observable<any> {
-    return this.http.get(this.apiUrl + 'request', this.options).pipe(
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+    return this.http.get(this.apiUrl + 'request', options).pipe(
       timeout(30000)
     );
   }
 
   public getMarks(): Observable<any> {
-    return this.http.get(this.apiUrl + 'placemark', this.options).pipe(
+    this.user = JSON.parse(localStorage.getItem("user")!);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.user.token
+    });
+    const options = {headers: headers};
+    return this.http.get(this.apiUrl + 'placemark', options).pipe(
       timeout(30000)
     );
   }

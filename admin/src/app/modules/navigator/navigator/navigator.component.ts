@@ -31,14 +31,26 @@ export class NavigatorComponent implements OnInit{
           let mark = {id: el.request_id, latitude: el.latitude, longitude: el.longitude, comment: el.comment, status: false};
           this.placemarks?.push(mark);
         });
-        this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any;}) => {
-          var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
-              {balloonContent: 'ID: #'+request.id}, {
+        this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any; comment: any; status: any;}) => {
+          if(request.status){
+            var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+              {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
               iconLayout: 'default#image',
               iconImageHref: 'assets/marker.png',
               iconImageSize: [30, 42],
               iconImageOffset: [-3, -42]
           });
+          }else{
+            var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+              {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'assets/marker2.png',
+              iconImageSize: [30, 42],
+              iconImageOffset: [-3, -42]
+          });
+          }
+          
+
           event.target.geoObjects.add(myPlacemark);
         });
         this.appService.loader.emit(false);
@@ -55,6 +67,32 @@ export class NavigatorComponent implements OnInit{
     this.navigatorService.markAccept({'id': id}).subscribe(result => {
       if(this.placemarks){
         this.placemarks[i].status = false;
+        this.map?.geoObjects.each((geoObject) => { 
+          this.map?.geoObjects.remove(geoObject);
+        });
+  
+        this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any; comment: any; status:any;}) => {
+
+          if(request.status){
+            var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+              {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'assets/marker.png',
+              iconImageSize: [30, 42],
+              iconImageOffset: [-3, -42]
+          });
+          }else{
+            var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+              {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'assets/marker2.png',
+              iconImageSize: [30, 42],
+              iconImageOffset: [-3, -42]
+          });
+          }
+
+          this.map?.geoObjects.add(myPlacemark);
+        });
       }
   });
   }
@@ -70,6 +108,32 @@ export class NavigatorComponent implements OnInit{
           if(this.placemarks){
             this.placemarks[i].status = true;
             this.placemarks[i].id = result.data.id;
+            this.map?.geoObjects.each((geoObject) => { 
+              this.map?.geoObjects.remove(geoObject);
+            });
+      
+            this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any; comment: any; status:any;}) => {
+  
+              if(request.status){
+                var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+                  {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+                  iconLayout: 'default#image',
+                  iconImageHref: 'assets/marker.png',
+                  iconImageSize: [30, 42],
+                  iconImageOffset: [-3, -42]
+              });
+              }else{
+                var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+                  {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+                  iconLayout: 'default#image',
+                  iconImageHref: 'assets/marker2.png',
+                  iconImageSize: [30, 42],
+                  iconImageOffset: [-3, -42]
+              });
+              }
+  
+              this.map?.geoObjects.add(myPlacemark);
+            });
           }
         });
 
@@ -80,14 +144,26 @@ export class NavigatorComponent implements OnInit{
             this.map?.geoObjects.remove(geoObject);
           });
     
-          this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any;}) => {
-            let myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
-                {balloonContent: 'ID: #'+request.id}, {
+          this.placemarks?.forEach((request: { id: any; latitude: any; longitude: any; comment: any; status:any;}) => {
+
+            if(request.status){
+              var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+                {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
                 iconLayout: 'default#image',
                 iconImageHref: 'assets/marker.png',
                 iconImageSize: [30, 42],
                 iconImageOffset: [-3, -42]
             });
+            }else{
+              var myPlacemark = new ymaps.Placemark([request.latitude, request.longitude], 
+                {balloonContent: 'ID: #'+request.id+'<br />'+request.comment}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'assets/marker2.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            });
+            }
+
             this.map?.geoObjects.add(myPlacemark);
           });
     

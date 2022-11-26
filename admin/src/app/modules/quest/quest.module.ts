@@ -19,6 +19,8 @@ import { AddquestComponent } from './addquest/addquest.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { EditquestComponent } from './editquest/editquest.component';
+import { RequestComponent } from './request/request.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const mapConfig: YaConfig = {
   apikey: '64abfa2f-a2e0-47cf-85bc-2084c90754cb',
@@ -30,6 +32,7 @@ const mapConfig: YaConfig = {
     QuestComponent,
     AddquestComponent,
     EditquestComponent,
+    RequestComponent,
   ],
   imports: [
     CommonModule,
@@ -48,7 +51,8 @@ const mapConfig: YaConfig = {
     MatDialogModule,
     ErrorModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatExpansionModule,
   ],
   providers: [QuestService,MatDatepickerModule],
 })

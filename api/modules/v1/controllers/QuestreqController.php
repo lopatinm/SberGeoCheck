@@ -3,6 +3,8 @@
 namespace app\modules\v1\controllers;
 
 use app\modules\v1\models\Questreq;
+use app\modules\v1\models\User;
+use app\modules\v1\models\Quest;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\auth\HttpBearerAuth;
@@ -24,7 +26,7 @@ class QuestreqController extends ActiveController
             ],
         ]);
         $behaviors['authenticator']['class'] = HttpBearerAuth::className();
-        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'index'];
+        $behaviors['authenticator']['only'] = ['create', 'update', 'delete', 'index', 'getreq'];
 
         return $behaviors;
     }
@@ -32,7 +34,7 @@ class QuestreqController extends ActiveController
     public function actions()
     {
         $actions = parent::actions();
-        unset($actions['index']);
+        unset($actions['index'], $actions['getreq']);
         return $actions;
     }
 
@@ -59,6 +61,20 @@ class QuestreqController extends ActiveController
         }
         return $activeData;
 
+    }
+
+    public function actionGetreq()
+    {
+        $response = [];
+
+        $questreqs = Questreq::find()->indexBy('id')->all();
+        foreach($questreqs as $questreq){
+                $user =  User::findOne(['id' => $questreq->user_id]);
+                $quest = Quest::findOne(['id' => $questreq->quest_id]);
+                $response[] = ['user'=>$user, 'quest'=> $quest, 'questreq'=> $questreq];
+        }
+
+        return $response;
     }
 
 }
