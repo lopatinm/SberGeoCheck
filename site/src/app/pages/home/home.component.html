@@ -11,7 +11,10 @@
       Вход
     </button>
     <button mat-button routerLink="/profile" aria-label="Вход" *ngIf="isLogged">
-      {{user.fullname}}
+      Кабинет
+    </button>
+    <button mat-button routerLink="/login" aria-label="Выйти" *ngIf="isLogged">
+      Выйти
     </button>
   </mat-toolbar>
 <mat-progress-bar mode="indeterminate" *ngIf="loader"></mat-progress-bar>

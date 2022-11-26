@@ -13,9 +13,10 @@ export class AppService {
   apiUrl = 'http://api.sbergeocheck.ru/v1/';
 
   public loader: EventEmitter<boolean> = new EventEmitter();
+  public isLogged: EventEmitter<boolean> = new EventEmitter();
   public title: EventEmitter<string> = new EventEmitter();
   public error: EventEmitter<string> = new EventEmitter();
-
+  
   user = UserModel;
   private headers = new HttpHeaders({
     'Content-Type': 'application/json'

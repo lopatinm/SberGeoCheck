@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit{
     this.loader = false;
     this.isLogged = false;
     this.appService.loader.subscribe(loader => this.loader = loader);
+    this.appService.isLogged.subscribe(isLogged => this.isLogged = isLogged);
     if (localStorage.getItem("user") && localStorage.getItem("user") !== "") {
       this.user = JSON.parse(localStorage.getItem("user")!);
       this.isLogged = true;

@@ -41,6 +41,7 @@ export class RegistrationComponent implements OnInit {
     this.appService.register(this.loginForm.value).subscribe(result => {
       if(result.status === 'success'){
         this.appService.loader.emit(false);
+        this.appService.isLogged.emit(true);
         this.user = result.data;
         localStorage.setItem("user", JSON.stringify(this.user));
         this.router.navigate(['/']);

@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.appService.loader.subscribe(loader => this.loader = loader);
     this.appService.error.subscribe(error => this.message = error);
     this.appService.loader.emit(false);
+    this.appService.isLogged.emit(false);
     this.appService.title.emit('Авторизация');
     localStorage.setItem("user", "");
     this.message = "Введите данные";
@@ -38,9 +39,11 @@ export class LoginComponent implements OnInit {
     this.error = false;
     this.message = "Подождите, идет авторизация...";
     this.appService.loader.emit(true);
+    
     this.appService.login(this.loginForm.value).subscribe(result => {
       if(result.status === 'success'){
         this.appService.loader.emit(false);
+        this.appService.isLogged.emit(true);
         this.user = result.data;
         localStorage.setItem("user", JSON.stringify(this.user));
         this.router.navigate(['/']);
